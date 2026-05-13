@@ -1,3 +1,4 @@
+#include "celeste_lib.h"
 
 //##################################################################
 //                    Platform Globals
@@ -112,6 +113,10 @@ int main()
   while (running)
   {
     platform_update_window();
+    SM_TRACE("Trace!");
+    SM_WARN("Warn!");
+    SM_ERROR("Error!");
+    SM_ASSERT(false, "Assertion not Hit!");
   } 
   
   return 0;
